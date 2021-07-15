@@ -1,0 +1,60 @@
+.page {
+  font-family: 'Rubik';
+  padding: 0.5em;
+}
+.header {
+  grid-area: header;
+  font-size: 3em;
+}
+
+.leftContainer {
+  grid-area: left-container;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightContainer {
+  grid-area: right-container;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  font-size: 0.8em;
+}
+
+.wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-areas: 
+  "header"
+  "right-container"
+  "left-container"
+  "footer";
+}
+
+@media (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "left-container right-container"
+    "footer footer";
+  }
+}
+
+.appName {
+  font-size: 2em;
+  font-weight: lighter;
+}
+
+.text {
+  font-size: 1em;
+  font-weight: 200;
+}
