@@ -25,7 +25,10 @@ const IndexPage = () => {
             <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width={300}/>
           </a>
         </div>
-        <footer class={footer}>Google Play and the Google Play logo are trademarks of Google LLC.</footer>
+        <footer class={footer}>
+          <a href="/privacy-policy">Privacy Policy</a>
+          <div>Google Play and the Google Play logo are trademarks of Google LLC.</div>
+        </footer>
       </div>
     </main>
   )

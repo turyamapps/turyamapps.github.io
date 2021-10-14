@@ -30,7 +30,8 @@ body {
 .footer {
   grid-area: footer;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   font-size: 0.8em;
 }
 
@@ -42,6 +43,12 @@ body {
   "right-container"
   "left-container"
   "footer";
+}
+
+.privacyPage {
+  overflow-y: auto !important;
+  font-family: 'Rubik';
+  padding: 0.5em;
 }
 
 @media (min-width: 500px) {
